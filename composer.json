@@ -1,0 +1,22 @@
+{
+    "name": "mvc/mvc",
+    "type": "project",
+    "description": "Basic structure of MVC in core PHP",
+    "require": {
+        "php": ">=7.*",
+        "twig/twig": "~3.0",
+        "vlucas/phpdotenv": "^5.3",
+        "phroute/phroute": "^2.1"
+        },
+    "autoload": {
+        "files": [
+            "App/Helpers/globalFunctions.php",
+            "App/Helpers/globalConstants.php"
+       
+        ],
+        "psr-4": {
+            "Core\\": "Core/",
+            "App\\": "App/"
+        }
+    }
+}
